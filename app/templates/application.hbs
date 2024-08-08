@@ -1,7 +1,8 @@
 {{page-title "MyTypescriptApp"}}
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+<PowerSelect @options={{this.names}} @onChange={{this.foo}} @labelText="Names" as |name|>
+  {{name}}
+</PowerSelect>
 
 {{outlet}}
+<BasicDropdownWormhole />
